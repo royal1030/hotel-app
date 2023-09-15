@@ -1,0 +1,303 @@
+{
+    "hotels":[
+    {
+        "id": 1,
+        "name": "Seaside Retreat",
+        "city": "Bikaner",
+        "rating": 3.1
+    },
+    {
+        "id": 2,
+        "name": "Sapphire Palace",
+        "city": "Nellore",
+        "rating": 4.4
+    },
+    {
+        "id": 3,
+        "name": "Rosewood Inn",
+        "city": "Rajkot",
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "Rose Garden",
+        "city": "Kolapur",
+        "rating": 3.7
+    },
+    {
+        "id": 5,
+        "name": "Green Valley",
+        "city": "Gulbarga",
+        "rating": 4.5
+    },
+    {
+        "id": 6,
+        "name": "Seaside Retreat",
+        "city": "Siliguri",
+        "rating": 4.2
+    },
+    {
+        "id": 7,
+        "name": "Starlit Sky",
+        "city": "Bhilai Nagar",
+        "rating": 3.7
+    },
+    {
+        "id": 8,
+        "name": "Royal Residency",
+        "city": "Bareilly",
+        "rating": 3.1
+    },
+    {
+        "id": 9,
+        "name": "Alpine Retreat",
+        "city": "Ulhasnagar",
+        "rating": 4.0
+    },
+    {
+        "id": 10,
+        "name": "Crystal Cove",
+        "city": "Kanpur",
+        "rating": 4.4
+    },
+    {
+        "id": 11,
+        "name": "Sapphire Palace",
+        "city": "Kolapur",
+        "rating": 4.7
+    },
+    {
+        "id": 12,
+        "name": "Whispering Pines",
+        "city": "Belgaum",
+        "rating": 3.3
+    },
+    {
+        "id": 13,
+        "name": "Tranquil Waters",
+        "city": "Jammu",
+        "rating": 4.5
+    },
+    {
+        "id": 14,
+        "name": "City Heights",
+        "city": "Aurangabad",
+        "rating": 3.2
+    },
+    {
+        "id": 15,
+        "name": "Emerald Suites",
+        "city": "Varanasi",
+        "rating": 4.4
+    },
+    {
+        "id": 16,
+        "name": "Blue Horizon",
+        "city": "Ludhiana",
+        "rating": 4.3
+    },
+    {
+        "id": 17,
+        "name": "Mountain Lodge",
+        "city": "Vijayawada",
+        "rating": 3.2
+    },
+    {
+        "id": 18,
+        "name": "Villa Serenity",
+        "city": "Cuttack",
+        "rating": 4.8
+    },
+    {
+        "id": 19,
+        "name": "Alpine Retreat",
+        "city": "Vasai-Virar",
+        "rating": 4.2
+    },
+    {
+        "id": 20,
+        "name": "Emerald Suites",
+        "city": "Varanasi",
+        "rating": 3.5
+    },
+    {
+        "id": 21,
+        "name": "Tranquil Waters",
+        "city": "Tirunelveli",
+        "rating": 3.7
+    },
+    {
+        "id": 22,
+        "name": "Emerald Suites",
+        "city": "Nagpur",
+        "rating": 4.6
+    },
+    {
+        "id": 23,
+        "name": "Rose Garden",
+        "city": "Pune",
+        "rating": 3.4
+    },
+    {
+        "id": 24,
+        "name": "Sunflower Inn",
+        "city": "Cuttack",
+        "rating": 4.2
+    },
+    {
+        "id": 25,
+        "name": "Crystal Clear",
+        "city": "Tirunelveli",
+        "rating": 3.8
+    },
+    {
+        "id": 26,
+        "name": "Paradise Resort",
+        "city": "Dhanbad",
+        "rating": 3.4
+    },
+    {
+        "id": 27,
+        "name": "Golden Gate",
+        "city": "Mangalore",
+        "rating": 3.6
+    },
+    {
+        "id": 28,
+        "name": "Royal Residency",
+        "city": "Tiruchirapalli",
+        "rating": 4.9
+    },
+    {
+        "id": 29,
+        "name": "Tranquil Waters",
+        "city": "Firozabad",
+        "rating": 4.7
+    },
+    {
+        "id": 30,
+        "name": "Paradise Resort",
+        "city": "Jalandhar",
+        "rating": 3.5
+    },
+    {
+        "id": 31,
+        "name": "Grand Plaza",
+        "city": "Malegaon",
+        "rating": 4.3
+    },
+    {
+        "id": 32,
+        "name": "Sapphire Palace",
+        "city": "Aurangabad",
+        "rating": 3.7
+    },
+    {
+        "id": 33,
+        "name": "Palm Grove",
+        "city": "Ulhasnagar",
+        "rating": 3.8
+    },
+    {
+        "id": 34,
+        "name": "Harbor Lights",
+        "city": "Solapur",
+        "rating": 3.7
+    },
+    {
+        "id": 35,
+        "name": "Sunrise Inn",
+        "city": "Guntur",
+        "rating": 4.6
+    },
+    {
+        "id": 36,
+        "name": "Grand Plaza",
+        "city": "Noida",
+        "rating": 4.2
+    },
+    {
+        "id": 37,
+        "name": "Tropical Haven",
+        "city": "Thane",
+        "rating": 4.8
+    },
+    {
+        "id": 38,
+        "name": "Imperial Palace",
+        "city": "Patiala",
+        "rating": 4.0
+    },
+    {
+        "id": 39,
+        "name": "Oasis Resort",
+        "city": "Kolapur",
+        "rating": 3.7
+    },
+    {
+        "id": 40,
+        "name": "Sunset Villa",
+        "city": "Mumbai",
+        "rating": 4.4
+    },
+    {
+        "id": 41,
+        "name": "Starlight Inn",
+        "city": "Jamnagar",
+        "rating": 4.2
+    },
+    {
+        "id": 42,
+        "name": "Tropical Haven",
+        "city": "Bangalore",
+        "rating": 4.1
+    },
+    {
+        "id": 43,
+        "name": "Riverfront Suites",
+        "city": "Jhansi",
+        "rating": 4.5
+    },
+    {
+        "id": 44,
+        "name": "Whispering Oaks",
+        "city": "Hubli and Dharwad",
+        "rating": 4.0
+    },
+    {
+        "id": 45,
+        "name": "Seaside Retreat",
+        "city": "Bhopal",
+        "rating": 4.6
+    },
+    {
+        "id": 46,
+        "name": "Whispering Oaks",
+        "city": "Amravati",
+        "rating": 3.0
+    },
+    {
+        "id": 47,
+        "name": "Sunset Harbor",
+        "city": "Amritsar",
+        "rating": 4.4
+    },
+    {
+        "id": 48,
+        "name": "Green Valley",
+        "city": "Jaipur",
+        "rating": 4.9
+    },
+    {
+        "id": 49,
+        "name": "Whispering Pines",
+        "city": "Guntur",
+        "rating": 4.4
+    },
+    {
+        "id": 50,
+        "name": "Whispering Oaks",
+        "city": "Indore",
+        "rating": 4.9
+    }
+]}

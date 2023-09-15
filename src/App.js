@@ -1,24 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+// import { CardLayout } from "./components/CardLayout";
+// import Header from "./components/Header";
+import Login from "./components/Login";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { CardLayoutPage } from "./pages/CardLayoutPage";
+import { HeaderPage } from "./pages/HeaderPage";
+// import { NotificationContainer } from "react-notifications";
+// import "react-notifications/lib/notifications.css";
 
 function App() {
+  const ProtectedRoute = ({ children }) => {
+    const email = JSON.parse(localStorage.getItem("email"));
+    if (!email) {
+      return <Navigate to="/" />;
+    }
+
+    return children;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Header></Header>
+       */}
+      {/* <Login></Login> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <>
+                <Login />
+              </>
+            }
+          />
+        </Routes>
+
+        <Routes>
+          <Route
+            path="/home"
+            exact
+            element={
+              <>
+                <ProtectedRoute>
+                  <HeaderPage />
+                  <CardLayoutPage />
+                </ProtectedRoute>
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
