@@ -15,12 +15,12 @@ export const CardLayoutPage = () => {
     //   <CardLayout BlurFilter={() => setblurred(true)} />
     // </div>
 
-    <div style={{ filter: blurred ? "blur(5px)" : "none" }}>
+    <div style={{ backgroundColor: "#3D4454" }}>
       <CardLayout
-        BlurFilter={(value) => {
-          setBlurred(value);
-        }}
-        modalVisible={modalVisible}
+      // BlurFilter={(value) => {
+      //   setBlurred(value);
+      // }}
+      // modalVisible={modalVisible}
       />
     </div>
   );

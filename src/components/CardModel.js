@@ -11,7 +11,7 @@ const CardModal = ({ ele, onClose }) => {
         backgroundColor: "#fff",
         padding: "20px",
         zIndex: 999999,
-        filter: "none !important", // This will override any parent filter property
+        filter: "blur(0) !important",
       }}
     >
       <h2>{ele.name}</h2>

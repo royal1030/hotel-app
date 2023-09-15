@@ -1,13 +1,8 @@
-// import logo from "./logo.svg";
 import "./App.css";
-// import { CardLayout } from "./components/CardLayout";
-// import Header from "./components/Header";
 import Login from "./components/Login";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { CardLayoutPage } from "./pages/CardLayoutPage";
 import { HeaderPage } from "./pages/HeaderPage";
-// import { NotificationContainer } from "react-notifications";
-// import "react-notifications/lib/notifications.css";
 
 function App() {
   const ProtectedRoute = ({ children }) => {

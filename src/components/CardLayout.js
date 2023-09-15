@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./Card/Card";
 import axios from "axios";
 import { useState, useEffect } from "react";
 // import Grid from "@material-ui/core/Grid";
@@ -14,6 +14,7 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
   const [selectedHotel, setSelectedHotel] = useState(null);
   const [bookingHotel, setBookingHotel] = useState(null);
   const [notificationVisible, setNotificationVisible] = useState(false);
+  const [sHotel, setsHotel] = useState(null);
 
   const handleBookNow = (hotel) => {
     setBookingHotel(hotel);
@@ -31,11 +32,19 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
 
   const handleCardClick = (hotelId) => {
     setSelectedHotel(hotelId);
-    BlurFilter(true);
+    // BlurFilter(true);
   };
 
   const handleCloseModal = () => {
     setSelectedHotel(null);
+  };
+
+  const handleClick = (hotelId) => {
+    if (selectedHotel === hotelId) {
+      setsHotel(null);
+    } else {
+      setsHotel(hotelId);
+    }
   };
 
   //   const handleShowNotification = () => {
@@ -57,15 +66,21 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
 
   return (
     <>
-      <div style={{ position: "relative", zIndex: modalVisible ? 1 : "auto" }}>
+      <div
+        style={{
+          position: "relative",
+          zIndex: modalVisible ? 1 : "auto",
+        }}
+      >
         <Grid container spacing={2} sx={{ pt: 2, pl: 2, pr: 2 }}>
           {hotels.map((ele, index) => (
             <Grid key={index} item xs={6} sm={4} md={3}>
               <Card
                 ele={ele}
                 isSelected={ele.id === selectedHotel}
-                onBookNow={() => handleBookNow(ele)}
                 onClick={() => handleCardClick(ele.id)}
+                onCard={() => handleClick}
+                onBookNow={() => handleBookNow(ele)}
                 handleShowNotification={() => setNotificationVisible(true)}
               />
             </Grid>
@@ -87,7 +102,7 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
           </>
         )}
 
-        {selectedHotel && (
+        {/* {selectedHotel && (
           <CardModal
             ele={hotels.find((ele) => ele.id === selectedHotel)}
             // onClose={handleCloseModal}
@@ -96,7 +111,7 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
               BlurFilter(false); // Set blurred to false when modal is closed
             }}
           />
-        )}
+        )} */}
       </div>
     </>
   );

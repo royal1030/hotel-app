@@ -21,6 +21,7 @@
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "json-server": "json-server --watch db.json --host 127.0.0.1 --port 3003",
+    "json-server": "json-server --watch data.json --host 127.0.0.1 --port 3003",
     "dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",

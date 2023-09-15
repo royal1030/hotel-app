@@ -3,7 +3,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useNavigate } from "react-router-dom";
+
 import img from "../assests";
+import SearchBar from "./SearchBar";
 
 function Header() {
   // logout..
@@ -32,6 +34,12 @@ function Header() {
           style={{ marginRight: "30px" }}
         /> */}
         <Navbar.Brand href="#home">Hotel Booking</Navbar.Brand>
+        {/* <Nav.Link href="/faq">FAQ</Nav.Link>
+        <Nav.Link href="/contactus">Contact Us</Nav.Link> */}
+
+        {/* search bar */}
+
+        <SearchBar />
 
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -41,10 +49,7 @@ function Header() {
         </Navbar.Toggle>
 
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/faq">FAQ</Nav.Link>
-            <Nav.Link href="/contactus">Contact Us</Nav.Link>
-          </Nav>
+          <Nav className="me-auto"></Nav>
 
           <Nav>
             <button
