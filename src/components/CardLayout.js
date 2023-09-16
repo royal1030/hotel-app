@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card/Card";
+import Card from "./CardComp/CardComp";
 // import axios from "axios";
 import { useState, useEffect } from "react";
 // import Grid from "@material-ui/core/Grid";
