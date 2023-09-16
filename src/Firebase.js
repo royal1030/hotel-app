@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getFirestore } from "@firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDx29YRn6MpHPs2JHJrcNhEljFEoYr97cA",
-  authDomain: "competishun-df0c6.firebaseapp.com",
-  projectId: "competishun-df0c6",
-  storageBucket: "competishun-df0c6.appspot.com",
-  messagingSenderId: "572842919421",
-  appId: "1:572842919421:web:04bf547bb392623ae1c594",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER,
+  appId: process.env.REACT_APP_APPID,
 };
 
 const app = initializeApp(firebaseConfig);

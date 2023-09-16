@@ -45,7 +45,7 @@ function Login() {
       <MDBContainer
         fluid
         className="d-flex align-items-center justify-content-center"
-        style={{ minHeight: "100vh" }}
+        style={{ minHeight: "100vh", backgroundColor: "#1C2F54" }}
       >
         <MDBCard className="text-black m-5" style={{ borderRadius: "25px" }}>
           <MDBCardBody>

@@ -12,43 +12,6 @@ import {
 } from "mdb-react-ui-kit";
 import { FaStar } from "react-icons/fa";
 
-// export default function Card({ ele }) {
-//   return (
-// <MDBCard border="1px solid black" style={{ padding: "20px" }}>
-//   <MDBCardTitle style={{ textAlign: "center" }}>{ele.name}</MDBCardTitle>
-//       <MDBCardImage
-//         src={ele.images[0]}
-//         position="top"
-//         width={100}
-//         height={200}
-//         alt="..."
-//       />
-//       {/* <MDBCardBody>
-//         <MDBCardText>{ele.city}</MDBCardText>
-//         <MDBBtn href="#">Book Now</MDBBtn>
-//       </MDBCardBody> */}
-
-//       <MDBCardBody>
-//         <div className="row">
-//           <div className="col-md-6 mb-2">
-//             <MDBCardText>{ele.city}</MDBCardText>
-//           </div>
-//           <div className="col-md-6 mb-2">
-//             <div className="d-flex justify-content-md-end">
-//               {[...Array(ele.star)].map((_, index) => (
-//                 <FaStar key={index} color="#FFD700" size={12} />
-//               ))}
-//             </div>
-//           </div>
-//           <div className="col-md-12">
-//             <MDBBtn href="#">Book Now</MDBBtn>
-//           </div>
-//         </div>
-//       </MDBCardBody>
-//     </MDBCard>
-//   );
-// }
-
 export default function Card({
   ele,
   isSelected,
@@ -91,7 +54,21 @@ export default function Card({
           ))}
         </Carousel> */}
 
-        {isSelected && <p>Show some text inside the card</p>}
+        {isSelected && (
+          <div>
+            {ele.reviews.map((review, index) => (
+              <p key={index}>
+                <strong>User </strong> : {review.user}
+                <br />
+                <strong>Rating : </strong> {review.rating}
+                <br />
+                <strong> Comment: </strong> {review.comment}
+                <br />
+                {/* Add other review properties here */}
+              </p>
+            ))}
+          </div>
+        )}
         <MDBCardBody>
           <div className="row">
             <div className="col-md-6 mb-2">

@@ -16,38 +16,40 @@ function App() {
 
   return (
     <>
-      {/* <Header></Header>
-       */}
-      {/* <Login></Login> */}
+      <div style={{ backgroundColor: "#1C2F54" }}>
+        {/* <Header></Header>
+         */}
+        {/* <Login></Login> */}
 
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            exact
-            element={
-              <>
-                <Login />
-              </>
-            }
-          />
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              exact
+              element={
+                <>
+                  <Login />
+                </>
+              }
+            />
+          </Routes>
 
-        <Routes>
-          <Route
-            path="/home"
-            exact
-            element={
-              <>
-                <ProtectedRoute>
-                  <HeaderPage />
-                  <CardLayoutPage />
-                </ProtectedRoute>
-              </>
-            }
-          />
-        </Routes>
-      </BrowserRouter>
+          <Routes>
+            <Route
+              path="/home"
+              exact
+              element={
+                <>
+                  <ProtectedRoute>
+                    <HeaderPage />
+                    <CardLayoutPage />
+                  </ProtectedRoute>
+                </>
+              }
+            />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

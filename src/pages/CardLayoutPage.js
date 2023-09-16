@@ -15,7 +15,7 @@ export const CardLayoutPage = () => {
     //   <CardLayout BlurFilter={() => setblurred(true)} />
     // </div>
 
-    <div style={{ backgroundColor: "#3D4454" }}>
+    <div>
       <CardLayout
       // BlurFilter={(value) => {
       //   setBlurred(value);

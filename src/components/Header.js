@@ -20,9 +20,10 @@ function Header() {
 
   return (
     <Navbar
+      sticky="top"
       collapseOnSelect
       expand="lg"
-      style={{ backgroundColor: "#1C2F54" }}
+      style={{ backgroundColor: "#3B71CA" }}
       variant="dark"
     >
       <Container>
@@ -39,7 +40,7 @@ function Header() {
 
         {/* search bar */}
 
-        <SearchBar />
+        {/* <SearchBar /> */}
 
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -54,11 +55,10 @@ function Header() {
           <Nav>
             <button
               type="button"
-              className="btn btn-secondary btn-sm d-none d-lg-inline rounded-circle"
+              className="btn btn-info btn-sm d-none d-lg-inline rounded-circle"
               onClick={() => navigate("/home")} // Navigate to home page
             >
               {localStorage.getItem("name")[1].toUpperCase()}
-              {/* {console.log(localStorage.getItem("name")[1].toUpperCase())} */}
             </button>
             {/* <img
               src={localStorage.getItem("profPic")}
@@ -69,7 +69,7 @@ function Header() {
             /> */}
             <button
               type="button"
-              className="btn btn-light btn-sm"
+              className="btn btn-light btn-sm ms-2"
               onClick={() => logout()}
             >
               Logout
