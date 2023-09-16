@@ -7,8 +7,8 @@ import "./CardLayoutPage.css";
 export const CardLayoutPage = () => {
   //   const [blurred, setblurred] = useState(false);
 
-  const [blurred, setBlurred] = useState(false);
-  const [modalVisible, setModalVisible] = useState(false);
+  //   const [blurred, setBlurred] = useState(false);
+  //   const [modalVisible, setModalVisible] = useState(false);
 
   return (
     // <div style={{ filter: blurred ? "blur(5px)" : "none" }}>

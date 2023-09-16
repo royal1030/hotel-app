@@ -1,18 +1,20 @@
 import React from "react";
 import Card from "./Card/Card";
-import axios from "axios";
+// import axios from "axios";
 import { useState, useEffect } from "react";
 // import Grid from "@material-ui/core/Grid";
 import Grid from "@mui/material/Grid";
-import { getAllHotels } from "../services/api";
-import { FaStar } from "react-icons/fa";
+// import { getAllHotels } from "../services/api";
+// import { FaStar } from "react-icons/fa";
 import Notification from "./Notification/Notification";
-import CardModal from "./CardModel";
-import SearchBar from "./SearchBar";
+// import CardModal from "./CardModel";
+// import SearchBar from "./SearchBar";
 import "./CardLayout.css";
+import hotels from "../database";
 
 export const CardLayout = ({ BlurFilter, modalVisible }) => {
-  const [hotels, setHotels] = useState([]);
+  //   console.log(hotels, "hotels");
+  //   const [hotels, setHotels] = useState([]);
   const [selectedHotel, setSelectedHotel] = useState(null);
   const [bookingHotel, setBookingHotel] = useState(null);
   const [notificationVisible, setNotificationVisible] = useState(false);
@@ -22,6 +24,16 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
 
   const handleBookNow = (hotel) => {
     setBookingHotel(hotel);
+
+    // setNotificationVisible(true);
+    // Show a success notification
+    // NotificationManager.success(
+    //   `${hotel.name} has been booked!`,
+    //   "Booking Successful"
+    // );
+
+    // // Set the booked hotel for displaying the alert
+    // setBookingHotel(hotel);
   };
 
   const handleCardClick = (hotelId) => {
@@ -41,14 +53,26 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
     }
   };
 
+  //   const handleShowNotification = () => {
+  //     setNotificationVisible(true);
+
+  //     setTimeout(() => {
+  //       setNotificationVisible(false);
+  //     }, 2000);
+  //   };
+
+  //   useEffect(() => {
+  //     const getHotels = async () => {
+  //       const response = await getAllHotels();
+  //       //   console.log(response.data, "response");
+  //       setHotels(response.data);
+  //       setData(response.data);
+  //     };
+  //     getHotels();
+  //   }, []);
+
   useEffect(() => {
-    const getHotels = async () => {
-      const response = await getAllHotels();
-      //   console.log(response.data, "response");
-      setHotels(response.data);
-      setData(response.data);
-    };
-    getHotels();
+    setData(hotels);
   }, []);
 
   const handleQuery = (e) => {
@@ -117,9 +141,23 @@ export const CardLayout = ({ BlurFilter, modalVisible }) => {
             type="success"
             onclose={() => setNotificationVisible(false)}
             notificationVisible={notificationVisible}
+            // bookingHotel={bookingHotel}
+            // visible={notificationVisible}
+            // setVisible={setNotificationVisible}
           />
         </>
       )}
+
+      {/* {selectedHotel && (
+          <CardModal
+            ele={hotels.find((ele) => ele.id === selectedHotel)}
+            // onClose={handleCloseModal}
+            onClose={() => {
+              setSelectedHotel(null);
+              BlurFilter(false); // Set blurred to false when modal is closed
+            }}
+          />
+        )} */}
     </>
   );
 };

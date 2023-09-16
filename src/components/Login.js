@@ -9,9 +9,7 @@ import {
   MDBCard,
   MDBCardBody,
   MDBCardImage,
-  MDBInput,
   MDBIcon,
-  MDBCheckbox,
 } from "mdb-react-ui-kit";
 
 function handleClick() {

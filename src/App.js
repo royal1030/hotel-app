@@ -3,6 +3,8 @@ import Login from "./components/Login";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { CardLayoutPage } from "./pages/CardLayoutPage";
 import { HeaderPage } from "./pages/HeaderPage";
+// import CardModal from "./components/CardModel";
+// import { useState } from "react";
 
 function App() {
   const ProtectedRoute = ({ children }) => {
@@ -13,6 +15,12 @@ function App() {
 
     return children;
   };
+
+  // const [isSelected, setSelected] = useState(false);
+
+  // const handleClose =()=>{
+
+  // }
 
   return (
     <>
@@ -43,6 +51,12 @@ function App() {
                   <ProtectedRoute>
                     <HeaderPage />
                     <CardLayoutPage />
+                    {/* {
+                      isSelected &&
+                      <div>
+                        <CardModal ele={} onClose={handleClose}/>
+                      </div>
+                    } */}
                   </ProtectedRoute>
                 </>
               }

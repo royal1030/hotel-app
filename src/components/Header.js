@@ -1,11 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import { useNavigate } from "react-router-dom";
 
-import img from "../assests";
-import SearchBar from "./SearchBar";
+// import img from "../assests";
+// import SearchBar from "./SearchBar";
 
 function Header() {
   // logout..
@@ -82,35 +82,3 @@ function Header() {
 }
 
 export default Header;
-
-// import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-
-// function Header() {
-//   return (
-//     <Navbar expand="lg" className="bg-dark text-white">
-//       <Container>
-//         <Navbar.Brand href="#home" className="text-white">
-//           React-Bootstrap
-//         </Navbar.Brand>
-//         <Navbar.Toggle
-//           aria-controls="basic-navbar-nav"
-//           className="text-white"
-//         />
-//         <Navbar.Collapse id="basic-navbar-nav" className="text-white">
-//           <Nav className="me-auto">
-//             <Nav.Link href="#home" className="text-white">
-//               Home
-//             </Nav.Link>
-//             <Nav.Link href="#link" className="text-white">
-//               Link
-//             </Nav.Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-// export default Header;
